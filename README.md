@@ -2,7 +2,7 @@
 
 ## Bash Cheatsheet & Reference
 
-[](/bash/BashReference.md )
+[Cheatsheet & Reference](/bash/BashReference.md )
 
 ## Simple Bash menu (Dynamic options)
 [Bash Menu](/bash/dynamic_menu.sh)
