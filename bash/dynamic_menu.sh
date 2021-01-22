@@ -21,8 +21,6 @@ select opt in ${OPTIONS[@]} quit; do
         else
                 echo "Wrong Selection, Try again"
         fi
-#       *) echo "work";;
-#       esac
 done
 
 printf "Selected IP: %s" $SELECTEDIP
