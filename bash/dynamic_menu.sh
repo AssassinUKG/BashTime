@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#IP Chooser based on Ip hostname (ip a)
+#IP Chooser based on Ip hostname (hostname -I)
 
 HOSTNAME="hostname -I"
 #HOSTNAME=("1.1.1.1" "5.5.5.5" "10.10.10.10" "quit")
