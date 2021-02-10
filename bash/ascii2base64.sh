@@ -7,18 +7,20 @@ NbM2x4xbGHeziHwjRU7xpLBE/+KxlmOOnKVG+rLcsYSkUvIzp74j16aMc0dawtJjLw636itkI1eg
 n4L2B8ZvFjwKAgAA" | gunzip)
     echo  "$asciiart"
 }
+usage() {
+    echo -e "\nUsage:\n1. save asciii art to file (nano)\n2. ./ascii2base64 file\n"
+}
 
 if [ ${#@} -lt 1 ]; then
     banner
+    usage
     printf "Give a ASCII ART file (./asii2base64 asciifile) ...,Exiting..."
     exit;
 fi
 
-usage() {
-    echo -e "\nUsage:\n1. save asciii art to file (nano)\n2. ./ascii2base64 file\n"
-}
 banner
 usage
+
 art1=$(cat "$1" | gzip -cf | base64)
 echo -e "\nCommand:\nasciiart=\$(base64 -d <<< \"$art1\" | gunzip) \n\nOutput:\n"
 asciiDecode=$(base64 -d <<< "$art1" | gunzip)
