@@ -27,4 +27,5 @@ while true; do
             2) break ;;
             *) echo "Look, it's a simple question..." >&2
         esac
-    d
+    done
+  done
